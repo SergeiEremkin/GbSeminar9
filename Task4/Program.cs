@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿int SumOfNumbers(int Number)
+{   
+    int sum = 0;
+    if(Number!=0)
+    {
+        sum += SumOfNumbers(Number/10)+Number%10;
+    }
+    return sum;
+}
+Console.WriteLine(SumOfNumbers(2243));

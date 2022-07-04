@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿void PrintNumber(int M, int N, int Step)
+{
+    if (M <= N)
+    {
+        Console.WriteLine(M);
+        PrintNumber(M + Step,N, Step);
+    }
+
+}
+PrintNumber(10,20,2);
